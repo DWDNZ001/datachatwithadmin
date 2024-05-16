@@ -1,4 +1,4 @@
-FROM python:3.11.7-bookworm
+FROM python:3.13.0b1-bookworm
 RUN apt-get update && apt-get install python3-tk tk-dev -y
 COPY pyproject.toml /usr/local/src/myscripts/pyproject.toml
 COPY poetry.lock /usr/local/src/myscripts/poetry.lock
