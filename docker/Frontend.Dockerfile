@@ -8,7 +8,7 @@ COPY --chown=node:node ./code/frontend ./frontend
 WORKDIR /home/node/app/frontend
 RUN npm run build
 
-FROM python:3.11.7-bookworm
+FROM python:3.13.0b1-bookworm
 RUN apt-get update && apt-get install python3-tk tk-dev -y
 
 COPY pyproject.toml /usr/src/app/pyproject.toml
